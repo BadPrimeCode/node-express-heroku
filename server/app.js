@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 
 app.listen(process.env.PORT || 3000, function() {
-  console.log('listening on', http.address().port);
+  console.log('listening on', app.address().port);
 });
 
 // base url
