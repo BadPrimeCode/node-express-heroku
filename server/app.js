@@ -6,7 +6,9 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 
-app.listen('8888', 'localhost', function() {
+app.listen(process.env.PORT || 3000, function() {
+  console.log('listening on', app.address().port);
+});
   console.log('server is listening on port 8888');
 });
 
