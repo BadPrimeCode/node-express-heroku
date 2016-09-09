@@ -9,8 +9,6 @@ var urlencodedParser = bodyParser.urlencoded({extended: false});
 app.listen(process.env.PORT || 3000, function() {
   console.log('listening on', app.address().port);
 });
-  console.log('server is listening on port 8888');
-});
 
 // base url
 app.get('/', function (req, res){
