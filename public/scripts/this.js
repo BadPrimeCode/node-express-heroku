@@ -13,22 +13,12 @@ $('document').ready(function() {
       noise: noiseIn
     };
 
-    // ajax POST that sends object to /texter route
     $.ajax({
       type: 'POST',
       url: '/texter',
       data: objectToSend,
       success: function(data) {
         console.log('got this from server - ' + data);
-      } //end ajax success
-    }); // end ajax
-
-    // ajax POST to route on our server
-    $.ajax({
-      type: 'POST',
-      url: '/texter',
-      success: function(data) {
-        console.log('ajax success:', data);
       } //end success
     }); //end ajax
   }) //end sendInfo on click
