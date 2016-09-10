@@ -21,5 +21,5 @@ $('document').ready(function() {
         console.log('got this from server - ' + data);
       } //end success
     }); //end ajax
-  }) //end sendInfo on click
+  }); //end sendInfo on click
 }); //end document ready
